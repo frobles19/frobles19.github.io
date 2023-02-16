@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SAFEpass</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="titulo">
+            <h1>SAFE<span>PASS</span></h1>
+        </div>
+        <div class="password">
+            <input type="text" class="pass-valor" readonly value="Generador de constraseñas">
+        </div>
+        <div class="pass-long">
+            <div class="pass-long-text">
+                <span>Longitud de la contraseña</span>
+                <span class="pass-long-span">6</span>
+            </div>
+            <input type="range" class="pass-range" min="4" max="20" step="1" value="8" onchange="showVal(this.value);">
+        </div>
+        <div class="opciones">
+            <div class="opc1">
+                <div class="minuscula">
+                    <input type="checkbox" id="minuscula">
+                    <label for="minuscula"> Minusculas</label>
+                </div>
+                <div class="mayuscula">
+                    <input type="checkbox" id="mayuscula">
+                    <label for="mayuscula"> Mayusculas</label>
+                </div>
+            </div>
+            <div class="opc2">
+                <div class="numero">
+                    <input type="checkbox" id="numero">
+                    <label for="numero"> Numeros</label>
+                </div>
+                <div class="simbolo">
+                    <input type="checkbox" id="simbolo">
+                    <label for="simbolo"> Simbolos</label>
+                </div>
+            </div>
+        </div>
+        <button class="boton">Generar contraseña</button>
+
+        <p class="copy">&copy Francisco Robles | Todos los derechos reservados.</p>
+    </div>
+
+    <!-- JavaScript-->
+    <script src="main.js"></script>
+</body>
+
+</html>
