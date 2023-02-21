@@ -145,7 +145,7 @@ label {
     margin-top: 40px;
 }
 
-.boton:hover {
+.boton:active {
     background-color: #273746;
 }
 
